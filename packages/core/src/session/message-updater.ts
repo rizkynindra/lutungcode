@@ -434,7 +434,6 @@ export function update(adapter: Adapter, event: SessionEvent.DurableEvent) {
               model: event.data.model,
               native: event.data.native,
               summary: event.data.text,
-              providerContext: event.data.providerContext,
               cost: event.data.cost,
               tokens: event.data.tokens,
             })
@@ -450,7 +449,6 @@ export function update(adapter: Adapter, event: SessionEvent.DurableEvent) {
               model: event.data.model,
               native: event.data.native,
               summary: event.data.text,
-              providerContext: event.data.providerContext,
               cost: event.data.cost,
               tokens: event.data.tokens,
               time: { created },
